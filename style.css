@@ -1,8 +1,10 @@
 @import url(script.js);
+@import url();
 *{
     padding:0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 .logo{
     padding: 20px;
@@ -10,6 +12,7 @@
     display: flex;
     position: absolute;
     top:0; left: 3px;
+
 
 }
 header{
@@ -21,7 +24,9 @@ header{
     display: flex;
     align-items: flex-end;
     justify-content: center;
+   
 }
+
 .header-content{
     margin-bottom: 110px;
     color:rgb(28, 28, 102);
@@ -31,13 +36,45 @@ header{
     font-size: 4vmin;
     
 }
+
 .line{
-    width:150px;
-    height: 4px;
+    width:100px;
+    height: 8px;
     background: #2bab0d;
     margin: 10px auto;
     border-radius: 5px;
 }
+.firsttitle{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 100px;
+    height:100px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    overflow: hidden; 
+}
+.slider{
+    color: #2bab0d;
+    margin-left: 12px;
+    box-sizing: border-box;
+    animation: slider 6s linear infinite;
+
+}
+@keyframes slider{
+   0%{ margin-top:-200px ;}
+   30%{ margin-top: -200px;} 
+   35%{ margin-top: 0px;} 
+   65%{ margin-top: 0px;}  
+   70%{ margin-top: 200px;}
+   50%{ margin-top: 0px ;}
+   100%{margin-top: 200px;}
+
+}
+
+
+
 .header-content h1{
     font-size: 5vmin;
     margin-top: 20px;
@@ -123,13 +160,15 @@ body{
 }
 .text{
     color:rgba(110, 109, 109);
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 30px;
     width: 50% ,-50%;
     margin-top: 30px;
+    text-align: center;
 
 }
+
 /* our brands */
 
 #ourbrands{
@@ -150,8 +189,8 @@ body{
 }
 .line2{
     width:150px;
-    height: 4px;
-    background: #091e46;
+    height: 8px;
+    background: rgb(28, 28, 102);
     margin: 10px auto;
     border-radius: 5px;
     justify-content: center;
@@ -316,6 +355,68 @@ body{
 
 
 }
+.product-image2{
+     
+     position: relative;
+        width:100%;
+        height: 100px;
+        overflow:hidden;
+        
+    
+}
+.product-card2{
+    flex: 0 0 auto;
+    width: 250px;
+    height: 200px;
+    margin-right: 40px;
+}
+/*-----activites----*/
+.activities{
+    width: 100%;
+    margin:  auto;
+    padding-top: 40px;
+    padding: 40px;
+    justify-content: center;
+    
+}
+.wfp{
+    padding-left: 80px;
+}
+.product-card3{
+    flex: 0 0 auto;
+    margin-bottom: 40px;
+    height: 450px;
+    margin-right: 40px;
+}
+.product-image3{
+     
+    position: relative;
+       width:100%;
+       height: 700;
+       overflow:hidden;
+       
+   
+}
+/*-----unibro group----*/
+#unibrogroup{
+    margin-top: 70;
+    width: 100%;
+    margin:  auto;
+    
+    padding-top: 70px;
+    padding: 40px;
+    justify-content: center;
+    
+}
+.text4{color:rgb(138, 132, 132);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    width: 50% ,-50%;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
 /*----contact----*/
 #contact-us{
     padding-bottom: 0px;
@@ -347,7 +448,7 @@ body{
 }
 .contact-col{
     flex-basis: 48% ;
-    margin-bottom: ;
+    
     margin-left: 23%;
 }
 
@@ -379,9 +480,10 @@ body{
     
     padding-bottom: 220px;
      width: 600px;
-   height: 400px;;
+   height: 450px;;
     margin-right: 60%;
 }
+
 /*---footer---*/
 .footer{
     font-family: "segoe ui";
